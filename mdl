@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# check if number of arguments is correct
+[ "$#" -eq 1 ] || { echo "Usage: mdl <url>"; exit; }
+
+# download music using yt-dlp
+yt-dlp \
+    --format "ba[ext=m4a]" \
+    --parse-metadata "playlist_index:%(track_number)s" \
+    --add-metadata \
+    --embed-thumbnail \
+    --output "%(album)s/%(playlist_autonumber)02d - %(title)s.%(ext)s" \
+    --convert-thumbnails jpg \
+    --ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" \
+    "$1"
