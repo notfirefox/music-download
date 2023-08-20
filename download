@@ -9,7 +9,6 @@ fi
 (
   cd "$HOME/Music" || exit
   yt-dlp \
-    --extract-audio \
     --format "ba[ext=m4a]" \
     --parse-metadata "playlist_index:%(track_number)s" \
     --add-metadata \
