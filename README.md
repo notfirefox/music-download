@@ -2,7 +2,7 @@
 Script for Downloading Music
 
 ## :clipboard: Requirements 
-- yt-dlp
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - Linux or macOS
 
 ## :package: Installation
