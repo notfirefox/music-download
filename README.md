@@ -1,10 +1,11 @@
-# Music download
-Script for downloading music
+# Music Download
+Script for Downloading Music
 
-## Requirements
-- [ffmpeg](https://ffmpeg.org)
-- [mutagen](https://github.com/quodlibet/mutagen)
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+## :clipboard: Requirements 
+Use `brew` to install the required dependencies.
+```sh
+brew install yt-dlp
+```
 
-## Installation
+## :package: Installation
 Put the script into your `~/.local/bin` folder.
