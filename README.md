@@ -6,17 +6,17 @@ Script for Downloading Music
 - Linux or macOS
 
 ## :package: Installation
-Use `brew` to install the `yt-dlp`.
+Install `yt-dlp` using `brew`.
 ```sh
 brew install yt-dlp
 ```
 
-Download the script into the `~/.local/bin` directory.
+Download the script to `~/.local/bin`.
 ```sh
 wget -P ~/.local/bin "https://raw.githubusercontent.com/notfirefox/music-download/main/mdl"
 ```
 
-Make the script executable.
+Make sure that it is executable.
 ```sh
 chmod +x ~/.local/bin/mdl
 ```
