@@ -1,7 +1,10 @@
 #!/bin/sh
 
 # check if number of arguments is correct
-[ "$#" -eq 1 ] || { echo "Usage: mdl <url>"; exit; }
+if [ "$#" -ne 1 ]; then
+    echo "Usage: mdl <url>"
+    exit
+fi
 
 # download music using yt-dlp
 yt-dlp \
