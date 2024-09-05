@@ -8,7 +8,7 @@ Script for Downloading Music
 ## :package: Installation
 Put the script into `~/.local/bin`.
 ```sh
-wget -P ~/.local/bin "https://raw.githubusercontent.com/notfirefox/music-download/main/mdl"
+curl -o ~/.local/bin/mdl "https://raw.githubusercontent.com/notfirefox/music-download/main/mdl"
 ```
 
 Make it executable.
